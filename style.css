@@ -148,7 +148,7 @@ body {
 }
 .face-grid {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(8, 1fr);
   gap: 12px;
 }
 .face-btn {
@@ -334,7 +334,7 @@ body {
 /* ── BRAND GRID ── */
 .brand-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   gap: 10px;
 }
 .brand-card {
@@ -438,13 +438,14 @@ body {
   .hero      { padding: 56px 24px 48px; }
   .selector-section { padding: 0 24px 60px; }
   .result-section   { padding: 0 24px 60px; }
-  .face-grid { grid-template-columns: repeat(3, 1fr); }
+  .face-grid { grid-template-columns: repeat(4, 1fr); }
   .result-cols { grid-template-columns: 1fr; }
   .result-col:first-child { border-right: none; border-bottom: 1px solid var(--border); }
   .result-top  { padding: 28px 24px; }
   .result-col  { padding: 24px; }
   .cta-row     { padding: 20px 24px; flex-direction: column; align-items: flex-start; }
   .footer { padding: 24px; flex-direction: column; gap: 8px; }
+  .brand-grid { grid-template-columns: 1fr 1fr; }
 }
 @media (max-width: 480px) {
   .face-grid { grid-template-columns: repeat(2, 1fr); }

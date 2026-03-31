@@ -16,6 +16,8 @@ const FACE_DATA = {
       { name: 'CELINE', model: 'Triomphe · CL40194U', reason: '둥글고 각진 라인의 밸런스. Triomphe 로고가 스타일 포인트', tag: '30-40대' },
       { name: 'FENDI', model: 'FF0472 · Baguette', reason: 'FF 더블F 오버사이즈로 존재감 강조. Gen-Z 무드', tag: '20대 추천' },
       { name: 'FERRAGAMO', model: 'SF300S · SF929S', reason: '우아한 골드 디테일과 정제된 실루엣. 클래식 완성', tag: '50대+ 추천' },
+      { name: 'LONGCHAMP', model: 'LO612S · Classic Oval', reason: '파리지앵 감성의 오벌 실루엣. 계란형 얼굴에 자연스러운 조화', tag: '30-40대' },
+      { name: 'ESCADA', model: 'SES418 · Butterfly', reason: '여성스러운 버터플라이 실루엣. 계란형에 화사함과 우아함 동시에', tag: '30-50대' },
     ]
   },
 
@@ -35,6 +37,8 @@ const FACE_DATA = {
       { name: 'SANDRO', model: 'SM6007 · Paris Edit', reason: '파리지앵 미니멀 웨이파러. 가볍고 세련된 일상 스타일', tag: '20-30대' },
       { name: 'CELINE', model: 'CL40240U · Black Frame', reason: '오버사이즈 사각 실루엣. 둥근형에 강한 대비와 파워 부여', tag: '40대 추천' },
       { name: 'DIOR', model: 'DiorInDior · Geometric', reason: '기하학적 라인으로 얼굴에 구조감. 럭셔리 엣지 표현', tag: '30-40대' },
+      { name: 'POLICE', model: 'SPLT50K · Wayfarer', reason: '남성미 넘치는 웨이파러 실루엣. 둥근형에 강렬한 각도 부여', tag: '20-40대' },
+      { name: 'NIKE', model: 'MAVERICK RISE · Sport Square', reason: '스포티한 스퀘어 프레임. 활동적이면서 얼굴에 라인감 강조', tag: '20-30대' },
     ]
   },
 
@@ -54,6 +58,8 @@ const FACE_DATA = {
       { name: 'DIOR', model: 'DiorSoStellaire · Round', reason: '클래식 라운드에 Dior 럭셔리함. 각진 얼굴을 우아하게 중화', tag: '30-40대' },
       { name: 'FENDI', model: 'FF0432S · Oval Frame', reason: '오벌 형태의 FF 로고 디테일. 트렌디하면서 얼굴과 조화', tag: '20-30대' },
       { name: 'FERRAGAMO', model: 'SF1082S · Round Gold', reason: '골드 라운드 프레임. 각진 얼굴에 클래식한 우아함 더하기', tag: '50대+ 추천' },
+      { name: 'MULBERRY', model: 'ML5202 · Soft Round', reason: '영국 감성의 부드러운 라운드. 각진형 턱선을 자연스럽게 완화', tag: '30-40대' },
+      { name: 'LCG 선글라스', model: 'LCS4305 · Round Lens', reason: '합리적 가격의 깔끔한 라운드. 각진형 입문 추천 데일리 선택', tag: '전 연령' },
     ]
   },
 
@@ -73,6 +79,8 @@ const FACE_DATA = {
       { name: 'PAUL SMITH', model: 'PS Big D · Half Rim', reason: '영국 클래식 하프림. 지적이고 세련된 이미지로 균형 완성', tag: '30-40대' },
       { name: 'FERRAGAMO', model: 'SF856S · Rimless', reason: '우아한 리무리스 디자인. 하트형에 가장 정제된 럭셔리 선택', tag: '50대 추천' },
       { name: 'CELINE', model: 'CL40195 · Transparent', reason: '투명·라이트 컬러 오벌. 넓은 이마를 자연스럽게 중화', tag: '30-40대' },
+      { name: 'ESCADA', model: 'SES416 · Light Oval', reason: '우아한 라이트 오벌 실루엣. 하트형 넓은 이마를 부드럽게 커버', tag: '30-50대' },
+      { name: 'FILA', model: 'FLS7448 · Half Frame', reason: '스포티한 하프 프레임. 가벼운 착용감으로 하트형 비율 자연스럽게', tag: '20-30대' },
     ]
   },
 
@@ -92,6 +100,8 @@ const FACE_DATA = {
       { name: 'FENDI', model: 'FF0480S · Oversized', reason: '오버사이즈 FF 스퀘어. 넓이감 확보 + Gen-Z 트렌드 완성', tag: '20대 추천' },
       { name: 'CELINE', model: 'CL40245U · Bold Frame', reason: '두꺼운 프레임으로 강한 넓이감. 파워풀한 럭셔리 스타일링', tag: '40대 추천' },
       { name: 'PAUL SMITH', model: 'PS Oversized · Temple Detail', reason: '컬러 템플 디테일로 시선 분산. 긴형에 위트 있는 개성 추가', tag: '30대 추천' },
+      { name: 'ED HARDY', model: 'EDS5980 · Wide Bold', reason: '볼드한 뿔테 와이드 프레임. 긴 얼굴에 강렬한 넓이감과 개성', tag: '20-30대' },
+      { name: 'POLICE', model: 'SPLT50K · Wide Pilot', reason: '파일럿 와이드 실루엣. 긴형 얼굴 비율을 자연스럽게 균형 조정', tag: '30-40대' },
     ]
   },
 
@@ -111,6 +121,50 @@ const FACE_DATA = {
       { name: 'CELINE', model: 'CL40196 · Brow Line', reason: '브로우 라인 스타일로 상단 강조. 세련된 파리지앵 무드', tag: '30-40대' },
       { name: 'FENDI', model: 'FF0419S · Baguette Cat', reason: 'FF 캣아이 디테일. 광대뼈를 자연스럽게 커버하면서 트렌디', tag: '20-30대' },
       { name: 'FERRAGAMO', model: 'SF282S · Oversized', reason: '오버사이즈 클래식 프레임. 다이아형에 우아한 럭셔리 균형', tag: '50대+ 추천' },
+      { name: 'LONGCHAMP', model: 'LO652S · Cat Eye', reason: '경쾌한 캣아이 실루엣. 다이아형 좁은 이마를 자연스럽게 넓혀주는 효과', tag: '30-40대' },
+      { name: 'MULBERRY', model: 'ML5206 · Browline', reason: '클래식 브로우라인으로 상단 포인트. 다이아형 이마에 균형감 부여', tag: '30-50대' },
+    ]
+  },
+
+  small: {
+    label: 'SMALL · 소형 얼굴',
+    heading: '소형 얼굴 — 작은 얼굴에 맞는 정확한 사이즈 선택이 핵심',
+    desc: '얼굴이 작은 분은 프레임이 얼굴보다 커지면 압도되어 보이기 쉽습니다. 렌즈 폭 50mm 이하의 소형 프레임을 기준으로 고르고, 브릿지(코받침) 간격이 좁은 제품을 선택하는 것이 중요합니다. 가는 메탈 프레임은 작은 얼굴을 세련되게 살려줍니다.',
+    frames: [
+      { icon: '🔵', name: '소형 오벌 (렌즈폭 46~50mm)', why: '작은 얼굴 비율에 딱 맞는 사이즈. 자연스럽고 균형 잡힌 착용감' },
+      { icon: '➰', name: '가는 메탈 프레임', why: '가느다란 선이 작은 얼굴을 깔끔하게 살림. 세련되고 지적인 인상' },
+      { icon: '🔲', name: '미니 스퀘어 (렌즈폭 48mm 이하)', why: '소형 사각이 작은 얼굴에 세련된 구조감 부여. 과하지 않은 존재감' },
+      { icon: '〰️', name: '좁은 브릿지 스타일', why: '코받침 간격이 좁아야 흘러내리지 않고 얼굴에 딱 맞게 안착' },
+    ],
+    avoid: '오버사이즈 · 렌즈폭 55mm 이상 대형 프레임 — 얼굴 크기보다 선글라스가 커져 어색하고 착용감도 불안정합니다.',
+    brands: [
+      { name: 'CELINE', model: 'CL40235U · Mini Oval', reason: '미니 사이즈 오벌 라인. 소형 얼굴에 최적화된 럭셔리 비율', tag: '30-40대 추천' },
+      { name: 'SANDRO', model: 'SD6083 · Slim Metal', reason: '파리지앵 슬림 메탈. 작은 얼굴에 가볍고 세련된 착용감', tag: '20-30대' },
+      { name: 'FENDI', model: 'FF0432S · Mini Frame', reason: '소형 FF 프레임. 작은 얼굴에 로고 포인트를 과하지 않게 살림', tag: '20-30대' },
+      { name: 'PAUL SMITH', model: 'PS Mini Round · 46mm', reason: '46mm 소형 라운드. 작은 얼굴 전용 사이즈로 완벽 핏 보장', tag: '30대 추천' },
+      { name: 'ESCADA', model: 'SES412 · Petite Cat', reason: '소형 캣아이 실루엣. 작은 얼굴에 우아함과 화사함을 섬세하게 표현', tag: '30-50대' },
+      { name: 'LCG 선글라스', model: 'LCS4305 · 54mm', reason: '합리적 가격의 슬림 프레임. 소형 얼굴 입문용으로 가장 무난한 선택', tag: '전 연령' },
+    ]
+  },
+
+  large: {
+    label: 'LARGE · 대형 얼굴',
+    heading: '대형 얼굴 — 넉넉한 사이즈로 비율의 균형을',
+    desc: '얼굴이 큰 분은 작은 프레임을 쓰면 선글라스가 얼굴에 묻혀 존재감이 사라집니다. 렌즈 폭 56mm 이상의 와이드 프레임을 기준으로 고르고, 브릿지 간격이 넓은 제품을 선택하세요. 두꺼운 테두리의 볼드 프레임도 대형 얼굴에는 오히려 균형감을 만들어줍니다.',
+    frames: [
+      { icon: '🟤', name: '오버사이즈 (렌즈폭 58mm+)', why: '얼굴 크기에 맞는 넉넉한 프레임. 비율 균형과 강한 존재감 동시에' },
+      { icon: '🔳', name: '볼드 뿔테 · 두꺼운 프레임', why: '두꺼운 테두리가 큰 얼굴과 자연스럽게 어울림. 자신감 있는 스타일링' },
+      { icon: '🌸', name: '버터플라이 · 와이드 스프레드', why: '옆으로 넓게 퍼지는 형태가 넓은 얼굴에 최적. 드라마틱한 효과' },
+      { icon: '🔵', name: '넓은 브릿지 와이드 오벌', why: '브릿지 간격이 넓어 코에 안정적으로 안착. 와이드 렌즈로 얼굴 커버' },
+    ],
+    avoid: '렌즈폭 50mm 이하 소형 · 가는 메탈 프레임 — 큰 얼굴 위에서 선글라스가 작아 보여 비율이 더 불균형해집니다.',
+    brands: [
+      { name: 'DIOR', model: 'DiorBlackSuit XL · 60mm', reason: '60mm 와이드 오버사이즈. 대형 얼굴에 가장 완벽하게 맞는 럭셔리 선택', tag: '30-40대 추천' },
+      { name: 'POLICE', model: 'SPLT50K · Wide 57mm', reason: '57mm 와이드 파일럿. 대형 얼굴의 강인한 인상을 극대화', tag: '20-40대' },
+      { name: 'ED HARDY', model: 'EDS5980 · Bold 56mm', reason: '볼드 뿔테 56mm. 개성 강한 대형 얼굴에 강렬한 스트리트 무드 완성', tag: '20-30대' },
+      { name: 'FENDI', model: 'FF0480S · Oversized 59mm', reason: 'FF 로고 오버사이즈 59mm. 대형 얼굴에도 비율감 있게 착용 가능', tag: '20-30대' },
+      { name: 'FERRAGAMO', model: 'SF2054SLBK · 61mm', reason: '61mm 대형 클래식 실루엣. 큰 얼굴에 우아한 럭셔리 존재감', tag: '40-50대 추천' },
+      { name: 'NIKE', model: 'MAVERICK RISE · 61mm', reason: '스포티 와이드 61mm. 대형 얼굴에 딱 맞는 스포츠 럭셔리 스타일', tag: '20-30대' },
     ]
   }
 };
